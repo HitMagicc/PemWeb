@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Kalkulator</h1>
+    <div class="input-bil">
+        <div class="masuk bil1">
+            <label for="bil1">Bil 1</label>
+            <input type="number" id="bil1">
+        </div>
+        <div class="operasi">
+            <span id="ganti-text"></span> 
+        </div>
+        <div class="masuk bil2">
+            <label for="bil2">Bil 2</label>
+            <input type="number" id="bil2">
+        </div>
+        <div class="masuk hasil">
+            <label for="hasil">Hasil</label>
+            <input type="number" id="hasil" readonly>
+        </div>
+    </div>
+    <div class="btn-opt">
+        <div class="btn tambah">
+            <button type="button" id="tambah">+</button>
+        </div>
+        <div class="btn kurang">
+            <button type="button" id="kurang">-</button>
+        </div>
+        <div class="btn kali">
+            <button type="button" id="kali">X</button>
+        </div>
+        <div class="btn bagi">
+            <button type="button" id="bagi">/</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+
+</body>
+</html>

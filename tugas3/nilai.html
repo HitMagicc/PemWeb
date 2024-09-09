@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<style>
+.masuk{
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    align-items: baseline;
+}
+</style>
+<html>
+<body>
+
+<h2>Cek Nilai Hayuu</h2>
+
+<div class="proses">
+    <div class="masuk">
+        <p id="demo">Masukkan nilai anda</p>
+    <input type="number" name="" id="ambil" placeholder="Masukkan nilai">
+    </div>
+
+    <div class="masuk">
+        NILAI ANDA
+        <div class="nilai" id="tes" style="font-size: x-large; font-weight: bolder;">
+            NILAI
+        </div>
+    </div>
+</div>
+
+<!-- <button type="button" onclick='tambah()'>Tambah Tambah Tambah Tambah </button> -->
+</body>
+<script>
+    document.getElementById("ambil").addEventListener("input", function(event) {
+        cek_nilai(); 
+    });
+    
+    function cek_nilai() {
+    let value_nilai = parseInt(document.getElementById("ambil").value);
+    let grade = "";
+
+    if (value_nilai >= 0 && value_nilai <= 40) {
+        grade = "E";
+    } else if (value_nilai >= 41 && value_nilai <= 55) {
+        grade = "D";
+    } else if (value_nilai >= 56 && value_nilai <= 60) {
+        grade = "C";
+    } else if (value_nilai >= 61 && value_nilai <= 65) {
+        grade = "BC";
+    } else if (value_nilai >= 66 && value_nilai <= 70) {
+        grade = "B";
+    } else if (value_nilai >= 71 && value_nilai <= 80) {
+        grade = "AB";
+    } else if (value_nilai >= 81 && value_nilai <= 100) {
+        grade = "A";
+    } else {
+        grade = "NILAI SALAH";
+    }
+
+    document.getElementById("tes").innerHTML = grade; 
+}
+</script>
+</html>

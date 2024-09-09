@@ -1,0 +1,76 @@
+body{
+    font-family: "Poppins", sans-serif;
+    margin: 0px;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #3e8353;
+}
+
+header{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    width: 100vw;
+    box-shadow: 7px 11px 15px -3px rgba(0,0,0,0.1);
+    background-color: #3c6d82;
+    color: antiquewhite;
+    position: sticky;
+}
+
+.card{
+    margin-top: 50px;
+    border-radius: 20px;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 750px;
+    height: 500px;
+    box-shadow: 7px 11px 15px -3px rgba(0,0,0,0.1);
+    background-color: aliceblue;
+}
+
+.text{
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 5px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+    height: 35px;
+    width: fit-content;
+    color: aliceblue;
+    background-color: #7064dc;
+    align-items: center;
+}
+
+.data{
+    margin-left: 20px;
+}
+
+h2{
+    margin: 0px;
+}
+
+.tugas a button{
+    font-family: "Poppins", sans-serif;
+    width: 250px;
+    height: 30px;
+    margin-top: 25px;
+    border-radius: 5px;
+    background-color: #3c6d82;
+    color: aliceblue;
+    transition: all 0.2s;
+    cursor: pointer;
+    border: none;
+}
+
+.tugas a button:hover{
+    background-color: #7064dc;
+    border-radius: 10px;
+}
